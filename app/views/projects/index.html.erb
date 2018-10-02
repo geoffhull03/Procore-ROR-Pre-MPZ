@@ -1,6 +1,10 @@
-<% @projects.each do |project| %>
+<table>
+  <th> Project ID </th>
+  <th> Name </th>
+  <% @projects.each do |project| %>
   <tr>
     <td><%= project['id'] %></td>
     <td><%= project['name'] %></td>
   </tr>
-<% end %>
+  <% end %>
+</table>

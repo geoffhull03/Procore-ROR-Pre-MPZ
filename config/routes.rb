@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   get 'welcome/index'
 
-  get 'welcome/welcome'
+  get 'welcome/callback'
 
   get 'companies/index'
 

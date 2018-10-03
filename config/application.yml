@@ -12,4 +12,4 @@
 
 CLIENT_ID: '57d3d911ff97b866533eaec8dd6168a9d99b6b75b095dc817a0b0192d1906ad1'
 CLIENT_SECRET: 'aaa2a3c912a5da9774b23228a2e3a93076427084f40ab2cde488165378c45b9e'
-REDIRECT_URL: 'http://localhost:3000/welcome/welcome'
+REDIRECT_URL: 'http://localhost:3000/welcome/callback'

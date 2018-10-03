@@ -4,7 +4,7 @@
     <% @companies.each do |company| %>
       <tr>
         <td><%= company['id'] %></td>
-        <td><%= company['name'] %></td>
+        <td><%= link_to "#{company['name']}", 'https://app.procore.com/' + "#{company['id']}" + '/company/home/list', :target => "_blank" %></td>
       </tr>
   <% end %>
 </table>

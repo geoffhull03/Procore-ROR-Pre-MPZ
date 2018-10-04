@@ -5,7 +5,7 @@ class ProjectsController < ApplicationController
     @company_id = params["company_id"]
 
     if @company_id == "" || @company_id.blank?
-        redirect_to welcome_welcome_path
+        redirect_to welcome_sign_in_path
     else
         projects_response = RestClient.get("https://app.procore.com/vapid/projects?company_id=#{@company_id}", {"Authorization": "Bearer #{session[:access_token]}"})
         @projects = JSON.parse(projects_response)

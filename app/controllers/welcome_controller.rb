@@ -26,8 +26,11 @@ class WelcomeController < ApplicationController
 
     session[:access_token]= obj['access_token']
 
-    redirect_to welcome_welcome_path
+    redirect_to welcome_sign_in_path
   end
 
+  def home_page
+
+  end
 
 end

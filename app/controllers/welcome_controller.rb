@@ -22,7 +22,7 @@ class WelcomeController < ApplicationController
     }
 
     #The root is app.procore.com, which must be changed to login.procore.com
-    response = RestClient.post('https://app.procore.com/oauth/token', request.to_json, { content_type: :json, accept: :json })
+    response = RestClient.post('https://login.procore.com/oauth/token', request.to_json, { content_type: :json, accept: :json })
     obj = JSON.parse(response)
     puts response
 

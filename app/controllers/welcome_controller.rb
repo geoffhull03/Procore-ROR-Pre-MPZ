@@ -11,7 +11,7 @@ class WelcomeController < ApplicationController
   def callback
     @authorization_code = params["code"]
 
-    request = 
+    request =
     {
       "grant_type": "authorization_code",
       "client_id": CLIENT_ID,
@@ -25,9 +25,8 @@ class WelcomeController < ApplicationController
     puts response
 
     session[:access_token]= obj['access_token']
+
+    redirect_to welcome_welcome_path
   end
 
-  def welcome
-    
-  end
 end

@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   get 'welcome/callback'
 
+  get 'welcome/welcome'
+
   get 'companies/index'
 
   get 'projects/index'

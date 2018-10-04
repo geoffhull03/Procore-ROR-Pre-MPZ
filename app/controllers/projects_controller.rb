@@ -1,7 +1,7 @@
 class ProjectsController < ApplicationController
 
-  def index
 
+  def list_projects
     @company_id = params["company_id"]
 
     if @company_id == "" || @company_id.blank?

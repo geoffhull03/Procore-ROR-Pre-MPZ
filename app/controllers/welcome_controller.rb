@@ -29,4 +29,5 @@ class WelcomeController < ApplicationController
     redirect_to welcome_welcome_path
   end
 
+
 end

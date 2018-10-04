@@ -3,6 +3,8 @@
 # CLIENT_ID: '7381a978f7dd7f9a1117'
 #
 # CLIENT SECRET: abdc3b896a0ffb85d373
-CLIENT_ID: '020fd032d8d438542db50ee37a5362e5bbc268217d6330ecb31d66cfe49b7138'
-CLIENT_SECRET: '324ee19ae9544461599b03998288147d038ccc982e98b657174185379586c9f7'
+CLIENT_ID: ''
+CLIENT_SECRET: ''
+
+#Take the redirect_url and paste it in the OAuth Redirect URI field on your applications's home page. 
 REDIRECT_URL: 'http://localhost:3000/welcome/callback'

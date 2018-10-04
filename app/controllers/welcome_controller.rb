@@ -4,6 +4,7 @@ require 'rest-client'
 
 class WelcomeController < ApplicationController
 
+  #These variables must be configured in config/application.yml
   CLIENT_ID = ENV['CLIENT_ID']
   CLIENT_SECRET = ENV['CLIENT_SECRET']
   REDIRECT_URL = ENV['REDIRECT_URL']
@@ -20,6 +21,7 @@ class WelcomeController < ApplicationController
       "redirect_uri": REDIRECT_URL
     }
 
+    #The root is app.procore.com, which must be changed to login.procore.com
     response = RestClient.post('https://app.procore.com/oauth/token', request.to_json, { content_type: :json, accept: :json })
     obj = JSON.parse(response)
     puts response
@@ -30,8 +32,6 @@ class WelcomeController < ApplicationController
   end
 
   def home_page
-
-
   end
 
 end

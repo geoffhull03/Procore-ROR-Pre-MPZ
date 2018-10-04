@@ -1,3 +1,5 @@
 <div>
-  <%= link_to 'Sign In To Procore', "https://api.procore.com/oauth/authorize?client_id=" + ENV['CLIENT_ID'] + "&response_type=code&redirect_uri=" + ENV['REDIRECT_URL'], :class => "button"%>
+  <%= link_to 'Sign In To Procore', "https://app.procore.com/oauth/authorize?client_id=" + ENV['CLIENT_ID'] + "&response_type=code&redirect_uri=" + ENV['REDIRECT_URL'], :class => "button"%>
 </div>
+
+<!-- Since the request above is to a /oauth endpoint, the root of the request URL must be changed to login.procore.com -->

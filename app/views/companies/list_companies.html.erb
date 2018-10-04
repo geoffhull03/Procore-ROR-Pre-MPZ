@@ -4,6 +4,7 @@
     <% @companies.each do |company| %>
       <tr>
         <td><%= company['id'] %></td>
+        <!-- The link below can stay as app.procore.com as it renders a link to the production environment:app.procore.com/{company_id}/company/home/list-->
         <td><%= link_to "#{company['name']}", 'https://app.procore.com/' + "#{company['id']}" + '/company/home/list', :target => "_blank" %></td>
       </tr>
   <% end %>
